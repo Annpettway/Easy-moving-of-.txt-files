@@ -1,0 +1,15 @@
+import os
+import shutil
+os.chdir('C:\\')
+
+
+dir_src = ('C:\Users\Gnajem1\Documents\Folder A\\')
+dir_dst = ('C:\Users\Gnajem1\Documents\Folder B\\')
+
+
+for filename in os.listdir(dir_src):
+    if filename.endswith('.txt'):
+        shutil.move( dir_src + filename, dir_dst)
+
+        print(filename)
+   
